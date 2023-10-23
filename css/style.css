@@ -1,0 +1,95 @@
+*{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    
+    /* Utiliza gradientes radiales para crear un efecto degradado en las esquinas */
+    background: radial-gradient(ellipse at left top, #231b50 0%, transparent 35%) top left,
+                radial-gradient(ellipse at right bottom, #231b50 0%, transparent 35%) bottom right,
+                #040a1b;
+
+    /* Define el tamaño de los fondos */
+    background-size:  100% 100% auto;
+
+    /* Evita la repetición del fondo */
+    background-repeat: no-repeat;
+
+    /* Fija el fondo para que no se desplace con el contenido */
+    background-attachment: fixed;
+}
+
+
+.conteiner {
+    position: relative;
+    height: 100vh;
+    
+}
+.title-conteiner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title-conteiner h1 {
+    background-image: linear-gradient(to right, #420772, #8d13d8 , #e099ee);
+    -webkit-background-clip:  text; /* Propiedad específica para navegadores webkit, como Chrome y Safari */
+    background-clip: text; /* Propiedad estándar */
+    color: transparent; /* Hace que el texto sea transparente */
+    font-size: 6vh; /* Ajusta el tamaño de fuente según tus preferencias */
+    font-weight: 10vh; /* Opcional, ajusta el peso de la fuente según tus preferencias */
+    width: 80%;
+}
+  
+
+.button-conteiner {
+    display: grid;
+    place-items: center;
+    margin-top: 7vh;
+}
+
+.button-conteiner button{
+    width: 20vh;
+    height: 5vh;
+    background-color: #714e91;
+    border-radius: 10vh;
+    border-color: transparent;
+}
+
+.footer-conteiner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 550%);
+}
+
+.footer-conteiner p{
+    color:  #606470;
+}
+
+
+/*Telefonos*/
+@media screen and (max-width:767px){
+    .footer-conteiner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 850%);
+    }
+    .button-conteiner button{
+        width: 15vh;
+        height: 5vh;
+        
+    }
+}
+/*Tablets*/
+@media screen and (min-width:767px) and (max-width:1023px) {
+    
+}
+/*Escritorio*/
+@media screen and (min-width:1024px){
+    
+}
